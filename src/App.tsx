@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import type { CSSProperties, PointerEvent } from 'react'
+import { useState } from 'react'
+import type { CSSProperties } from 'react'
 import type { IconType } from 'react-icons'
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6'
 import { FiArrowUpRight, FiCheck, FiShare2 } from 'react-icons/fi'
@@ -46,43 +46,7 @@ const socialLinks: SocialLink[] = [
 ]
 
 function App() {
-  const pageRef = useRef<HTMLElement>(null)
-  const frameRef = useRef<number | null>(null)
-  const touchTimerRef = useRef<number | null>(null)
   const [shareComplete, setShareComplete] = useState(false)
-
-  useEffect(() => {
-    return () => {
-      if (frameRef.current !== null) cancelAnimationFrame(frameRef.current)
-      if (touchTimerRef.current !== null) window.clearTimeout(touchTimerRef.current)
-    }
-  }, [])
-
-  const updateGradient = (event: PointerEvent<HTMLElement>) => {
-    const page = pageRef.current
-    if (!page || frameRef.current !== null) return
-
-    const { clientX, clientY } = event
-    frameRef.current = requestAnimationFrame(() => {
-      const bounds = page.getBoundingClientRect()
-      const x = ((clientX - bounds.left) / bounds.width) * 100
-      const y = ((clientY - bounds.top) / bounds.height) * 100
-      page.style.setProperty('--pointer-x', `${x.toFixed(1)}%`)
-      page.style.setProperty('--pointer-y', `${y.toFixed(1)}%`)
-      frameRef.current = null
-    })
-  }
-
-  const pulseGradient = () => {
-    const page = pageRef.current
-    if (!page) return
-
-    page.dataset.touched = 'true'
-    if (touchTimerRef.current !== null) window.clearTimeout(touchTimerRef.current)
-    touchTimerRef.current = window.setTimeout(() => {
-      delete page.dataset.touched
-    }, 480)
-  }
 
   const sharePage = async () => {
     const shareData = {
@@ -105,19 +69,21 @@ function App() {
   }
 
   return (
-    <main
-      ref={pageRef}
-      className="social-page"
-      onPointerMove={updateGradient}
-      onPointerDown={pulseGradient}
-    >
-      <div className="ambient ambient-one" aria-hidden="true" />
-      <div className="ambient ambient-two" aria-hidden="true" />
+    <main className="social-page">
+      <div className="gradient-field" aria-hidden="true">
+        <div className="gradient-orb gradient-orb-primary" />
+        <div className="gradient-orb gradient-orb-rose" />
+        <div className="gradient-orb gradient-orb-blue" />
+      </div>
 
       <div className="page-shell">
         <header className="profile-header">
           <div className="top-row">
-            <span className="location-chip">TCA · La Paz</span>
+            <span className="mini-mark" aria-hidden="true">
+              <i />
+              <i />
+              <i />
+            </span>
             <button
               className="share-button"
               type="button"
@@ -136,14 +102,6 @@ function App() {
               height="503"
               alt="The Consulting Academy La Paz"
             />
-          </div>
-
-          <div className="intro-copy">
-            <p className="intro-kicker">Aprende. Conecta. Crece.</p>
-            <h1>TCA La Paz, a un toque de distancia.</h1>
-            <p>
-              Encuentra nuestras redes y únete a la comunidad de The Consulting Academy en La Paz.
-            </p>
           </div>
         </header>
 

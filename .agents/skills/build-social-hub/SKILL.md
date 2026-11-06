@@ -18,7 +18,7 @@ Use this skill for the social hub, its link cards, sharing control and responsiv
 3. Use `react-icons` for every social or utility icon.
 4. Keep each link as a real anchor with a descriptive accessible name.
 5. Provide visible hover, focus and pressed feedback without changing layout bounds.
-6. Make pointer or touch gradients decorative, frame-throttled and reduced-motion aware.
+6. Keep ambient gradients autonomous, decorative and reduced-motion aware.
 7. Keep sharing progressive. Prefer the Web Share API and provide a clipboard fallback.
 8. Verify at 375 pixels, desktop width and short landscape height.
 9. Run `pnpm build` and `pnpm lint` before hand-off.
@@ -27,7 +27,7 @@ Use this skill for the social hub, its link cards, sharing control and responsiv
 
 The page must work when scripts for decorative effects fail. Never require a gesture to reach a social link or understand the page.
 
-Avoid continuous React state updates for pointer position. Write pointer coordinates to CSS custom properties inside `requestAnimationFrame`.
+Do not attach decorative gradient changes to pointer or touch events. The ambient effect must continue without user input.
 
 ## Hand-off
 
@@ -39,7 +39,7 @@ Use `$tca-brand-ui` for palette, typography, identity assets and decorative dire
 | --- | --- |
 | A social row is a `div` with a click handler | Replace it with a semantic anchor |
 | A utility button has only an icon | Add an accessible name and visible text when space allows |
-| Pointer movement causes component rerenders | Move the coordinates to CSS custom properties |
+| A tap or pointer movement changes the gradient | Remove the input handler and keep the ambient animation autonomous |
 | Touch feedback depends on hover | Add an explicit pressed state |
 | A link opens a new tab without `rel` | Add `rel="noreferrer"` |
 

@@ -21,7 +21,7 @@ Established: 2026-11-06. Source: supplied TCA logo and Linktree layout reference
 
 ## Typography and shape
 
-- Headings: Georgia or Times New Roman, medium weight
+- Brand typography: preserved inside the official logo asset
 - Interface: Segoe UI Variable, Aptos or Segoe UI
 - Major radius: 32px
 - Link radius: 22px
@@ -29,13 +29,13 @@ Established: 2026-11-06. Source: supplied TCA logo and Linktree layout reference
 
 ## Direction
 
-One centered link hub with an editorial brand header and four large social rows. The signature is a burgundy, rose and blue-gray gradient that follows pointer or touch position.
+One centered link hub with a compact brand header and four large social rows. The signature is an autonomous burgundy, rose and blue-gray ambient gradient.
 
 ## Assets and motion
 
 - Anchor asset: `src/assets/tca-la-paz-logo.png`
 - Icons: one `react-icons` family for social and utility symbols
-- Motion: 120 to 240ms interaction feedback and one 240ms staggered entrance
+- Motion: 120 to 240ms interaction feedback, one 240ms staggered entrance and slow ambient drift
 - Reduced motion: remove entrances and reduce transitions to immediate feedback
 
 ## Do not
@@ -43,4 +43,5 @@ One centered link hub with an editorial brand header and four large social rows.
 - Do not invent achievements, metrics or testimonials.
 - Do not use gradient text.
 - Do not require gestures for navigation.
+- Do not change decorative gradients in response to taps or pointer movement.
 - Do not replace the TCA burgundy with a generic purple palette.

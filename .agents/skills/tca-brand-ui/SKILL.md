@@ -17,9 +17,9 @@ Do not infer claims, partnerships, dates or audience statistics from the logo. L
 
 - Use burgundy for primary emphasis and focus, not as a full-page text background.
 - Use pale rose and blue-gray light fields to support the burgundy without competing with it.
-- Pair an editorial serif headline with a neutral, highly readable interface sans serif.
+- Let the official logo carry the editorial typography. Use a neutral, highly readable sans serif for interface text.
 - Use generous corners for major containers and tighter corners for link rows.
-- Keep one memorable effect. For this project it is the touch-responsive ambient gradient.
+- Keep one memorable effect. For this project it is the autonomous ambient gradient.
 - Use the diamond motif sparingly as a signature, divider or favicon.
 
 ## Protect usability

@@ -19,7 +19,7 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 - Use `react-icons` for social networks and utility icons.
 - Keep one clear column on phones and a maximum content width on larger screens.
 - Make links at least 48 pixels tall with visible focus and pressed states.
-- Let decorative gradients respond to pointer and touch input without blocking navigation.
+- Let decorative gradients change autonomously without reacting to taps or pointer input.
 - Respect `prefers-reduced-motion` and keep text readable without animation.
 - Keep the logo dimensions explicit to prevent layout shift.
 - Preserve Spanish metadata and accessible names.
@@ -34,4 +34,4 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 
 Run `pnpm build` and `pnpm lint` after code changes. Check the page at 375 pixels, desktop width and short landscape height.
 
-Verify keyboard navigation, external URLs, sharing feedback and reduced motion. Confirm that pointer effects stay decorative and never reduce text contrast.
+Verify keyboard navigation, external URLs, sharing feedback and reduced motion. Confirm that ambient effects never reduce text contrast.
