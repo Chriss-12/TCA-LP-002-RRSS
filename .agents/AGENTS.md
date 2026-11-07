@@ -9,7 +9,7 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 ## Brand source
 
 - Treat `src/assets/tca-la-paz-logo.png` as the identity source.
-- Preserve the burgundy, white and neutral-gray character of the supplied logo.
+- Use the official palette exactly: `#762258`, `#A7A5A6`, `#F8F8F8`, `#454545`, `#4B1638`, `#5F294B`, `#18324A`, `#4F6D82`, `#D8D6D7` and `#252525`.
 - Keep TCA formal, welcoming and community-oriented.
 - Do not invent achievements, dates, partners, testimonials or metrics.
 - Use the official URLs already defined in `src/App.tsx`.

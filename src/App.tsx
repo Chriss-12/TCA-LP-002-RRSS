@@ -20,28 +20,28 @@ const socialLinks: SocialLink[] = [
     description: 'Conoce nuestras actividades',
     href: 'https://www.facebook.com/profile.php?id=61556455592365',
     icon: FaFacebookF,
-    color: '#1877f2',
+    color: '#18324a',
   },
   {
     name: 'Instagram',
     description: 'Sigue el día a día de TCA',
     href: 'https://www.instagram.com/tca.lapaz/',
     icon: FaInstagram,
-    color: '#c13584',
+    color: '#762258',
   },
   {
     name: 'LinkedIn',
     description: 'Conecta con nuestra comunidad',
     href: 'https://www.linkedin.com/company/the-consulting-academy-la-paz/posts/',
     icon: FaLinkedinIn,
-    color: '#0a66c2',
+    color: '#4f6d82',
   },
   {
     name: 'Comunidad de WhatsApp',
     description: 'Únete al grupo de TCA La Paz',
     href: 'https://chat.whatsapp.com/HiadhIF6ZX830UWZF7Vlje',
     icon: FaWhatsapp,
-    color: '#128c7e',
+    color: '#5f294b',
   },
 ]
 
