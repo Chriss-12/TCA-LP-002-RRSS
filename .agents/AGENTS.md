@@ -12,6 +12,8 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 - Use the official palette exactly: `#762258`, `#A7A5A6`, `#F8F8F8`, `#454545`, `#4B1638`, `#5F294B`, `#18324A`, `#4F6D82`, `#D8D6D7` and `#252525`.
 - Use pure white only behind the raster logo when needed to match its embedded background.
 - Social cards use Azul marino with a Gris institucional border.
+- Social card borders are 2px and link rows use a 28px radius.
+- Official network colors are allowed only inside social icon frames and their accent strip.
 - Keep TCA formal, welcoming and community-oriented.
 - Do not invent achievements, dates, partners, testimonials or metrics.
 - Use the official URLs already defined in `src/App.tsx`.

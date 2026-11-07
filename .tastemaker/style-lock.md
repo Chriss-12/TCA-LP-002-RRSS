@@ -16,6 +16,8 @@ Established: 2026-11-06. Source: supplied TCA logo, official TCA palette image a
 - Button label: Blanco humo, contrast 9.24:1 on Vino TCA
 - Social cards: Azul marino with Blanco humo text, contrast 12.41:1
 - Social card border: Gris institucional, contrast 5.38:1 against Azul marino
+- Social card geometry: 2px border and 28px radius
+- Network accents: Facebook `#1877F2`, Instagram `#C13584`, LinkedIn `#0A66C2` and WhatsApp `#128C7E`
 - Logo surface exception: pure white `#FFFFFF` to match the raster asset background
 - Dark mode: not needed for this single-mode project
 
@@ -30,7 +32,7 @@ Established: 2026-11-06. Source: supplied TCA logo, official TCA palette image a
 - Brand typography: preserved inside the official logo asset
 - Interface: Segoe UI Variable, Aptos or Segoe UI
 - Major radius: 32px
-- Link radius: 22px
+- Link radius: 28px
 - Spacing: 4px base with 12px, 16px, 24px and 32px primary steps
 
 ## Direction
@@ -52,4 +54,4 @@ One centered link hub with a compact brand header and four large social rows. Th
 - Do not require gestures for navigation.
 - Do not change decorative gradients in response to taps or pointer movement.
 - Do not replace the TCA burgundy with a generic purple palette.
-- Do not introduce colors outside the ten-value TCA palette, except pure white behind the raster logo.
+- Do not introduce colors outside the TCA palette, except pure white behind the logo and official colors inside social icon accents.

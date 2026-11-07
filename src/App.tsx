@@ -11,6 +11,7 @@ type SocialLink = {
   description: string
   href: string
   icon: IconType
+  color: string
 }
 
 const socialLinks: SocialLink[] = [
@@ -19,24 +20,28 @@ const socialLinks: SocialLink[] = [
     description: 'Conoce nuestras actividades',
     href: 'https://www.facebook.com/profile.php?id=61556455592365',
     icon: FaFacebookF,
+    color: '#1877f2',
   },
   {
     name: 'Instagram',
     description: 'Sigue el día a día de TCA',
     href: 'https://www.instagram.com/tca.lapaz/',
     icon: FaInstagram,
+    color: '#c13584',
   },
   {
     name: 'LinkedIn',
     description: 'Conecta con nuestra comunidad',
     href: 'https://www.linkedin.com/company/the-consulting-academy-la-paz/posts/',
     icon: FaLinkedinIn,
+    color: '#0a66c2',
   },
   {
     name: 'Comunidad de WhatsApp',
     description: 'Únete al grupo de TCA La Paz',
     href: 'https://chat.whatsapp.com/HiadhIF6ZX830UWZF7Vlje',
     icon: FaWhatsapp,
+    color: '#128c7e',
   },
 ]
 
@@ -101,14 +106,14 @@ function App() {
         </header>
 
         <nav className="social-links" aria-label="Redes sociales de TCA La Paz">
-          {socialLinks.map(({ name, description, href, icon: Icon }, index) => (
+          {socialLinks.map(({ name, description, href, icon: Icon, color }, index) => (
             <a
               className="social-link"
               href={href}
               target="_blank"
               rel="noreferrer"
               key={name}
-              style={{ '--order': index } as CSSProperties}
+              style={{ '--network-color': color, '--order': index } as CSSProperties}
               aria-label={`Abrir ${name} de TCA La Paz`}
             >
               <span className="icon-frame" aria-hidden="true">
