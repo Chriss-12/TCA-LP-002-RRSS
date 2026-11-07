@@ -10,6 +10,8 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 
 - Treat `src/assets/tca-la-paz-logo.png` as the identity source.
 - Use the official palette exactly: `#762258`, `#A7A5A6`, `#F8F8F8`, `#454545`, `#4B1638`, `#5F294B`, `#18324A`, `#4F6D82`, `#D8D6D7` and `#252525`.
+- Use pure white only behind the raster logo when needed to match its embedded background.
+- Social cards use Azul marino with a Gris institucional border.
 - Keep TCA formal, welcoming and community-oriented.
 - Do not invent achievements, dates, partners, testimonials or metrics.
 - Use the official URLs already defined in `src/App.tsx`.
@@ -23,6 +25,7 @@ Build a fast, mobile-first link hub for The Consulting Academy La Paz. The first
 - Respect `prefers-reduced-motion` and keep text readable without animation.
 - Keep the logo dimensions explicit to prevent layout shift.
 - Preserve Spanish metadata and accessible names.
+- Clip horizontal overflow only. Never clip the page vertically or center content that is taller than the viewport.
 
 ## Local skills
 

@@ -14,6 +14,9 @@ Established: 2026-11-06. Source: supplied TCA logo, official TCA palette image a
 - Text primary: Grafito `#252525`, contrast 14.43:1 on Blanco humo
 - Text muted: Gris carbón `#454545`, contrast 9.03:1 on Blanco humo
 - Button label: Blanco humo, contrast 9.24:1 on Vino TCA
+- Social cards: Azul marino with Blanco humo text, contrast 12.41:1
+- Social card border: Gris institucional, contrast 5.38:1 against Azul marino
+- Logo surface exception: pure white `#FFFFFF` to match the raster asset background
 - Dark mode: not needed for this single-mode project
 
 ## Color contract
@@ -37,6 +40,7 @@ One centered link hub with a compact brand header and four large social rows. Th
 ## Assets and motion
 
 - Anchor asset: `src/assets/tca-la-paz-logo.png`
+- Logo presentation: pure white frame, no blend mode or translucent gradient
 - Icons: one `react-icons` family for social and utility symbols
 - Motion: 120 to 240ms interaction feedback, one 240ms staggered entrance and slow ambient drift
 - Reduced motion: remove entrances and reduce transitions to immediate feedback
@@ -48,4 +52,4 @@ One centered link hub with a compact brand header and four large social rows. Th
 - Do not require gestures for navigation.
 - Do not change decorative gradients in response to taps or pointer movement.
 - Do not replace the TCA burgundy with a generic purple palette.
-- Do not introduce colors outside the ten-value TCA palette.
+- Do not introduce colors outside the ten-value TCA palette, except pure white behind the raster logo.

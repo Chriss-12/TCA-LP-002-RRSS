@@ -42,6 +42,7 @@ Use `$tca-brand-ui` for palette, typography, identity assets and decorative dire
 | A tap or pointer movement changes the gradient | Remove the input handler and keep the ambient animation autonomous |
 | Touch feedback depends on hover | Add an explicit pressed state |
 | A link opens a new tab without `rel` | Add `rel="noreferrer"` |
+| Content or gradients cut off during scroll | Clip only horizontal overflow and top-align content on short viewports |
 
 ## Reporting
 

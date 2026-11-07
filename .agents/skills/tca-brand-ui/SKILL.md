@@ -31,6 +31,8 @@ Do not infer claims, partnerships, dates or audience statistics from the logo. L
 - Use Vino TCA for primary emphasis and focus, not as a full-page text background.
 - Build ambient gradients only from Vino ejecutivo, Ciruela institucional, Azul marino and Azul acero.
 - Use Blanco humo for the page and surfaces. Use Grafito and Gris carbón for readable text.
+- Use Azul marino cards with Gris institucional borders for the social hub.
+- Pure white is allowed only behind the raster logo to match its embedded background without a visible seam.
 - Let the official logo carry the editorial typography. Use a neutral, highly readable sans serif for interface text.
 - Use generous corners for major containers and tighter corners for link rows.
 - Keep one memorable effect. For this project it is the autonomous ambient gradient.
@@ -52,7 +54,7 @@ Use `$build-social-hub` for link data, sharing behavior and social-card interact
 
 | Detection pattern | Correction |
 | --- | --- |
-| A color falls outside the ten official values | Replace it with the closest role from the TCA palette |
+| A color falls outside the ten official values | Replace it with the closest role, except pure white behind the raster logo |
 | Every element uses the same radius | Restore distinct major-container and link-row radii |
 | Gradient crosses text with unstable contrast | Move the gradient behind a stable surface or vignette |
 | Copy claims outcomes not present in project data | Remove the claim or request verified wording |
